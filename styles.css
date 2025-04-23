@@ -1,0 +1,162 @@
+body {
+    background-color: #000000; 
+    font-family: 'Poppins', Arial, sans-serif; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+}
+
+.content-box {
+    background-color: #1a1a1a; 
+    border: 1px solid #ffffff; 
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); 
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3em; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+label {
+    font-size: 1.1rem; 
+    font-weight: 600; 
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    background-color: #000000; 
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+    border-radius: 5px;
+    padding: 12px; 
+    font-size: 1rem;
+    font-family: 'Poppins', Arial, sans-serif; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #c4f1fc; /* White/cian border on focus */
+    box-shadow: 0 0 8px #ffffff; /* White glow */
+}
+
+.social-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    font-size: 1.1rem; 
+    font-weight: 600; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.social-button {
+    background-color: #ffffff; 
+    color: #000000; /* Black icon */
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-button i {
+    font-size: 1.2rem; /* Icon size */
+}
+
+.social-button:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White icon on hover */
+}
+
+.social-button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+button {
+    background-color: #ffffff; 
+    color: #000000; 
+    font-family: 'Poppins', Arial, sans-serif; 
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600; 
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+button:active {
+    transform: scale(1); /* Slight shrink on click */
+}
+
+#password-error {
+    color: #ff4d4d; /* Red error text */
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem; 
+    font-weight: 400; 
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .content-box {
+        padding: 15px;
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
